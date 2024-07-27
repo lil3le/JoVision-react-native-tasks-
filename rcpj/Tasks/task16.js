@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { SafeAreaView, View, Text, Button, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { SafeAreaView, View, Text, Button, StyleSheet } from "react-native";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,15 +21,15 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   buttonContainer: {
     marginBottom: 20,
   },
   nameText: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });
 
