@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { SafeAreaView, View, Text, Button, TextInput, StyleSheet } from 'react-native';
 
-
-
 const Task22 = () => {
   const [text, setText] = useState('');
   const [showPage, setShowPage] = useState(false);
