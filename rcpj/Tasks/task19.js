@@ -11,7 +11,7 @@ class MyClassPage extends React.Component {
   }
 }
 
-const App = () => {
+const Task19 = () => {
   const [showPage, setShowPage] = useState(false);
 
   const togglePage = () => {
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Task19;
