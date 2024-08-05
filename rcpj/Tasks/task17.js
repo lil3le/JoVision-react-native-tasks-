@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SafeAreaView, View, Text, Button, StyleSheet } from "react-native";
 
-const App = () => {
+const Task17 = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Task17;
