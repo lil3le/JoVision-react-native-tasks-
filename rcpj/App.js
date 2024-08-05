@@ -7,6 +7,7 @@ import Task18 from './Tasks/task18';
 import Task19 from './Tasks/task19';
 import Task20 from './Tasks/task20';
 import Task21 from './Tasks/task21';
+import Task22 from './Tasks/task22';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -14,8 +15,10 @@ export default function App() {
       <Task17 />
       <Task18 />
       <Task19 />
-      <Task20 />*/}
-      <Task21 />
+      <Task20 />
+      <Task21 />*/}
+      <Task22 />
+      
     </View>
   );
 }
