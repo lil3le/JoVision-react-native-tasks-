@@ -7,7 +7,7 @@ import {
   StyleSheet,
 } from "react-native";
 
-const App = () => {
+const Task18 = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Task18;
