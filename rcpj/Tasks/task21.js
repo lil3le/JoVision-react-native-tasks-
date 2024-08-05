@@ -17,7 +17,7 @@ const MyFunctionPage = () => {
   );
 };
 
-const App = () => {
+const Task21 = () => {
   const [showPage, setShowPage] = useState(false);
 
   const togglePage = () => {
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Task21;
