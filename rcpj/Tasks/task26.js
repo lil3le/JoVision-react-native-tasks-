@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, ActivityIndicator, StyleSheet } from 'react-native';
 
 const Task26 = () => {
-  const [ip, setIp] = useState('Your IP will appear here');
+  const [ip, setIp] = useState('ip will appear here');
   const [loading, setLoading] = useState(false);
 
   const fetchIpNonBlocking = () => {
@@ -14,7 +14,7 @@ const Task26 = () => {
         setLoading(false);
       })
       .catch(error => {
-        console.error('Error fetching IP:', error);
+        console.error('error fetching IP:', error);
         setLoading(false);
       });
   };
@@ -26,7 +26,7 @@ const Task26 = () => {
       const data = await response.json();
       setIp(data.ip);
     } catch (error) {
-      console.error('Error fetching IP:', error);
+      console.error('error fetching IP:', error);
     }
     setLoading(false);
   };
