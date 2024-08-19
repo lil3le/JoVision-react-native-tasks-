@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { View, Image, Pressable, Alert, Button, StyleSheet, ScrollView, Modal, TextInput, TouchableOpacity, Text, FlatList } from 'react-native';
+import { View, Image, Pressable, Alert, Button, StyleSheet, Modal, TextInput, TouchableOpacity, Text, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const initialImages = [
@@ -19,7 +19,7 @@ const Task31 = () => {
   const [images, setImages] = useState(initialImages);
   const [modalVisible, setModalVisible] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  const scrollViewRef = useRef(null);
+  const flatListRef = useRef(null);
 
   const handleImagePress = (index) => {
     Alert.alert(`You have selected image: ${index + 1}`);
@@ -52,7 +52,7 @@ const Task31 = () => {
   const handleScrollToIndex = () => {
     const index = parseInt(inputValue) - 1;
     if (index >= 0 && index < images.length) {
-      scrollViewRef.current.scrollTo({ y: index * 210, animated: true });
+      flatListRef.current.scrollToIndex({ animated: true, index });
     } else {
       Alert.alert('Invalid Index', 'Please enter a valid index.');
     }
@@ -82,7 +82,7 @@ const Task31 = () => {
         keyExtractor={(item, index) => index.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
-        ref={scrollViewRef}
+        ref={flatListRef}
       />
       <Button title="Go to Image" onPress={() => setModalVisible(true)} />
       <Modal
