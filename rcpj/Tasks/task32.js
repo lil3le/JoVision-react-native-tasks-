@@ -10,7 +10,7 @@ const Task32 = () => {
   };
 
   return (
-    
+
     <View style={styles.container}>
       {!isVideoPlaying ? (
         <Pressable onPress={handlePress}>
