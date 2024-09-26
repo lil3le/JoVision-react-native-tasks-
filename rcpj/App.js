@@ -1,5 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './Components/Task39/store.js';
 import { StyleSheet, Text, View } from 'react-native';
 import Task16 from './Tasks/task16';
 import Task17 from './Tasks/task17';
@@ -21,6 +22,12 @@ import Task32 from './Tasks/task32';
 import Task33 from './Tasks/task33';
 import Task34 from './Tasks/task34';
 import Task35 from './Tasks/task35';
+import Task36 from './Tasks/task36';
+import Task37 from './Tasks/task37';
+import Task38 from './Tasks/task38';
+import Task39 from './Tasks/task39';
+import Task40 from './Tasks/task40';
+import Task41 from './Tasks/task41';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -42,8 +49,14 @@ export default function App() {
       <Task31 />
       <Task32 />
       <Task33 />
-      <Task34 />*/}
+      <Task34 />
       <Task35 />
+      <Task36 />
+      <Task37 />
+      <Task38 />
+      
+      <Task40 /> */}
+      <Provider store={store}><Task39></Task39></Provider>
       
     </View>
   );

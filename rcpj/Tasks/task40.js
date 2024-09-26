@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Button } from 'react-native';
 import { connect } from 'react-redux';
-import ComponentOne from '../Componets/Task40/ComponentOne';
+import ComponentOne from '../Components/Task40/ComponentOne';
 
 class Task40 extends Component {
   constructor(props) {

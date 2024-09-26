@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import { TextInput, StyleSheet, View } from "react-native";
-import ComponentTwo from "../Componets/Task38/ComponetTwo";
+import ComponentTwo from "../Components/Task38/ComponentTwo";
 
 export const TextContext = createContext();
 

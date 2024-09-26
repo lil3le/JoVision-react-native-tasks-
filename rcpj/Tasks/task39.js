@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Button } from 'react-native';
 import { useSelector } from 'react-redux';
-import ComponentOne from '../Componets/Task39/ComponentOne';
+import ComponentOne from '../Components/Task39/ComponentOne';
 
 const Task39 = () => {
   const [isComponentOneVisible, setIsComponentOneVisible] = useState(true);
