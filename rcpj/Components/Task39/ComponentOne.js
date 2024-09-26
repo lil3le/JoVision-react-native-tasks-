@@ -7,7 +7,6 @@ const ComponentOne = ({ initialText }) => {
   const [text, setTextLocal] = useState(initialText || '');
   const dispatch = useDispatch();
 
-  // Dispatch the text change to the Redux store whenever the text is updated
   useEffect(() => {
     dispatch(setText(text));
   }, [text, dispatch]);
@@ -16,7 +15,7 @@ const ComponentOne = ({ initialText }) => {
     <View>
       <TextInput
         value={text}
-        onChangeText={setTextLocal}  // Update the local text state
+        onChangeText={setTextLocal}  
         style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
       />
     </View>
