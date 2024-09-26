@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
-import { TextContext } from "../../Tasks/task38";
+import { TextContext } from "../../Tasks/TextContext"; 
 
 class ComponentOne extends Component {
     static contextType = TextContext;

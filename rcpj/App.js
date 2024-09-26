@@ -53,9 +53,10 @@ export default function App() {
       <Task35 />
       <Task36 />
       <Task37 />
+      
+      <Provider store={store}><Task39></Task39></Provider>
+      <Provider store={store}><Task40></Task40></Provider>*/}
       <Task38 />
-      <Provider store={store}><Task39></Task39></Provider>*/}
-      <Provider store={store}><Task40></Task40></Provider>
       
     </View>
   );

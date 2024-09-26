@@ -1,8 +1,7 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
 import { TextInput, StyleSheet, View } from "react-native";
 import ComponentTwo from "../Components/Task38/ComponentTwo";
-
-export const TextContext = createContext();
+import { TextContext } from "./TextContext"; 
 
 const Task38 = () => {
     const [text, setText] = useState('');
