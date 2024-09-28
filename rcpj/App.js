@@ -27,8 +27,8 @@ import Task37 from './Tasks/task37';
 import Task38 from './Tasks/task38';
 import Task39 from './Tasks/task39';
 import Task40 from './Tasks/task40';
-import Task41 from './Tasks/task412/task41/task41';
-import Task42 from './Tasks/task412/task42/task42.js';
+import Task41 from './Tasks/task41_42/task41/task41';
+import Task42 from './Tasks/task41_42/task42/task42';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -57,9 +57,9 @@ export default function App() {
       <Task38 />
       <Provider store={store}><Task39></Task39></Provider>
       <Provider store={store}><Task40></Task40></Provider>
+      <Task41 />*/}
+      <Task42 />
       
-      <Task42 />*/}
-      <Task41 />
       
       
     </View>
