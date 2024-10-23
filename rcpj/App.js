@@ -29,7 +29,9 @@ import Task39 from './Tasks/task39';
 import Task40 from './Tasks/task40';
 import Task41 from './Tasks/task41_42/task41/task41';
 import Task42 from './Tasks/task41_42/task42/task42';
-import Project from './Screens/Project';
+import Project from './Screens/project.js';
+import Project2 from './Screens_Stage2/Project2';
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -59,8 +61,9 @@ export default function App() {
       <Provider store={store}><Task39></Task39></Provider>
       <Provider store={store}><Task40></Task40></Provider>
       <Task41 />
-      <Task42 />*/}
-      <Project />
+      <Task42 />
+      <Project />*/}
+      <Project2 />
       
       
       
